@@ -24,7 +24,7 @@ $(document).ready(function(){
             }
             else if(random === 2){
                 $("#computerChoice").html("Paper");
-                $("#result").html("You lose!");
+                $("#result").html("You lose! But, let's try again!");
             }
             else if(random ===3){
                 $("#computerChoice").html("Scissors");
@@ -45,7 +45,7 @@ $(document).ready(function(){
             }
             else if(random ===3){
                 $("#computerChoice").html("Scissors");
-                $("#result").html("You lose!");
+                $("#result").html("You lose! But, let's try again!");
             }
 
         }
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
             if(random === 1){
                 $("#computerChoice").html("Rock");
-                $("#result").html("You lose!");
+                $("#result").html("You lose! But, let's try again!");
             }
             else if(random === 2){
                 $("#computerChoice").html("Paper");
@@ -69,7 +69,7 @@ $(document).ready(function(){
         }
 
         else{
-            $("#result").html("Please only enter rock, paper, or scissors");
+            $("#result").html("Please do not enter other than rock, paper, or scissors.");
 
         }
 

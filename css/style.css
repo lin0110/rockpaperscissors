@@ -1,3 +1,7 @@
+body{
+    background-color:black;
+    color:white;
+}
 .row{
   text-align:center;
   
@@ -6,4 +10,13 @@
   display:flex;
   justify-content:space-between;
   
+}
+img{
+  width: 700px;
+}
+h1{
+    text-decoration: underline;
+}
+#result{
+    font-size: 24px;
 }
