@@ -10,7 +10,7 @@
 $(document).ready(function(){
     $("#shoot").click(function(){
         let user = $("input").val();
-        let random = Math.round(Math.random() * 3);
+        let random = Math.random();
         console.log(user);
 
 
@@ -18,15 +18,15 @@ $(document).ready(function(){
         if(user.toLowerCase() === "rock") {
             $("#userChoice").html("Rock");
 
-            if(random === 1){
+            if(random <= .99){
                 $("#computerChoice").html("Rock");
                 $("#result").html("It's a tie!");
             }
-            else if(random === 2){
+            else if(random <= .66){
                 $("#computerChoice").html("Paper");
                 $("#result").html("You lose! But, let's try again!");
             }
-            else if(random ===3){
+            else if(random <= .33){
                 $("#computerChoice").html("Scissors");
                 $("#result").html("You win!");
             }
@@ -35,15 +35,15 @@ $(document).ready(function(){
         else if(user.toLowerCase() === "paper") {
             $("#userChoice").html("Paper");
 
-            if(random === 1){
+            if(random <= .99){
                 $("#computerChoice").html("Rock");
                 $("#result").html("You win!");
             }
-            else if(random === 2){
+            else if(random <= .66){
                 $("#computerChoice").html("Paper");
                 $("#result").html("It's a tie!");
             }
-            else if(random ===3){
+            else if(random <= .33){
                 $("#computerChoice").html("Scissors");
                 $("#result").html("You lose! But, let's try again!");
             }
@@ -53,15 +53,15 @@ $(document).ready(function(){
         else if(user.toLowerCase() === "scissors") {
             $("#userChoice").html("Scissors");
 
-            if(random === 1){
+            if(random <= .99){
                 $("#computerChoice").html("Rock");
                 $("#result").html("You lose! But, let's try again!");
             }
-            else if(random === 2){
+            else if(random <= .66){
                 $("#computerChoice").html("Paper");
                 $("#result").html("You win!");
             }
-            else if(random ===3){
+            else if(random <= .33){
                 $("#computerChoice").html("Scissors");
                 $("#result").html("It's a tie!");
             }
