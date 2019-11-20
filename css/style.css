@@ -21,6 +21,9 @@ h1{
     font-size: 36px;
 
 }
-#userChoice, #computerChoice{
+#userChoice, #computerChoice, em{
     font-size: 24px;
+}
+#result{
+    margin-right: 70px;
 }
